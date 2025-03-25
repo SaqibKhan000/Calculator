@@ -4,38 +4,43 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     width: 100%;
 }
 
-.phone{
+
+.phone {
     background-color: black;
     padding: 20px;
     width: 300px;
     color: white;
     border-radius: 30px;
 }
-.head{
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding-bottom: 20px;
-font-size: 14px;
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    font-size: 14px;
 }
-.calculator{
+
+.calculator {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-input{
+
+input {
     width: 100%;
     margin-top: 50px;
     font-size: 55px;
@@ -46,16 +51,19 @@ input{
     padding-bottom: 10px;
     padding-right: 15px;
 }
-input:focus{
+
+input:focus {
     outline: none;
 }
-.set{
+
+.set {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
-button{
+
+button {
     font-size: 23px;
     width: 60px;
     height: 60px;
@@ -67,23 +75,29 @@ button{
     border: none;
     cursor: pointer;
 }
-button:active{
+
+button:active {
     scale: .9;
 }
-.orange{
+
+.orange {
     background-color: orange;
 }
-#lastSet{
+
+#lastSet {
     justify-content: end;
 }
-#lastSet button:nth-child(1){
+
+#lastSet button:nth-child(1) {
     width: 120px;
     border-radius: 50px;
 }
-.lightGray{
+
+.lightGray {
     background-color: gainsboro;
     color: black;
 }
-input::placeholder{
+
+input::placeholder {
     color: gainsboro;
 }
