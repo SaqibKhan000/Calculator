@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 100%;
+}
+
+.phone{
+    background-color: black;
+    padding: 20px;
+    width: 300px;
+    color: white;
+    border-radius: 30px;
+}
+.head{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-bottom: 20px;
+font-size: 14px;
+}
+.calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    width: 100%;
+    margin-top: 50px;
+    font-size: 55px;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+input:focus{
+    outline: none;
+}
+.set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+button{
+    font-size: 23px;
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: rgb(114, 111, 111);
+    color: white;
+    border: none;
+    border: none;
+    cursor: pointer;
+}
+button:active{
+    scale: .9;
+}
+.orange{
+    background-color: orange;
+}
+#lastSet{
+    justify-content: end;
+}
+#lastSet button:nth-child(1){
+    width: 120px;
+    border-radius: 50px;
+}
+.lightGray{
+    background-color: gainsboro;
+    color: black;
+}
+input::placeholder{
+    color: gainsboro;
+}

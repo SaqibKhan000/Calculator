@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="phone">
+        <div class="head">
+            <p>5:40</p>
+            <div>
+                <i class="ri-wifi-line"></i>
+                <i class="ri-battery-low-line"></i>
+            </div>
+        </div>
+
+        <div class="calculator">
+            <input type="text" placeholder="0">
+            <div class="set">
+                <button class="lightGray" onclick="clean()">AC</button>
+                <button class="lightGray" onclick="del()">DEL</button>
+                <button class="lightGray" onclick="display('%')">%</button>
+                <button class="orange" onclick="display('/')">/</button>
+            </div>
+            <div class="set">
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button>
+                <button class="orange" onclick="display('*')">x</button>
+            </div>
+            <div class="set">
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button class="orange" onclick="display('-')">-</button>
+            </div>
+            <div class="set">
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button class="orange" onclick="display('+')">+</button>
+            </div>
+            <div class="set" id="lastSet">
+                <button onclick="display('0')">0</button>
+                <button onclick="display(',')">,</button>
+                <button class="orange" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.2.1/math.js"
+        integrity="sha512-ZOpEWF/zdnWKFpyY0TMzmZGkhjM9Z4RkW/GMF9X9NtZ6bhDqzAlWfk7NwqHPD+WriepCt3Th6+4jl4w4wkQolA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
